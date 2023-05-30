@@ -1,0 +1,258 @@
+@import url("https://themes.googleusercontent.com/fonts/css?kit=QqN2kllXmviCMOLcE6wtB3BOvHlqzW5KqdvzQAY8khO9KKvCPyyce6H2foqKj33FC5EmgMTlg6pQvHQPotoFWBm-K8HOHxkDNlCQAjwj_IHM6FJRIbm9JG_qIoTrcQgF");
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html {
+    background-color: #c7c2b7;
+}
+
+.background {
+    background-color: #fff9ed;
+    max-width: 900px;
+    padding: 57.6pt 72pt 57.6pt 72pt;
+    margin: auto;
+}
+
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-left: 36pt;
+    padding-top: 10pt;
+    padding-left: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.3;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    margin-right: -0.8pt;
+    color: #000000;
+    font-size: 11pt;
+    font-family: "PT Serif";
+}
+
+.box-title {
+    padding-top: 16pt;
+    padding-bottom: 0pt;
+    line-height: 1;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    margin-right: -0.8pt;
+}
+
+.logo {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 27pt;
+    font-family: "DM Serif Display";
+    font-style: italic;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ul-title {
+    color: #000000;
+    font-weight: 700;
+    text-decoration: none;
+    vertical-align: baseline;
+    font-size: 13.5pt;
+    font-family: "PT Serif";
+    font-style: normal;
+}
+
+p {
+    padding-top: 10pt;
+    padding-bottom: 0pt;
+    line-height: 1.3;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    margin-right: -0.8pt;
+    margin: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-family: 'Mulish', sans-serif;
+}
+
+.black {
+    color: #000000;
+}
+
+.marker {
+    background-color: #ff9900;
+}
+
+.title {
+    padding-top: 0pt;
+    color: #00a797;
+    font-weight: 700;
+    font-size: 35pt;
+    padding-bottom: 0pt;
+    font-family: "Old Standard TT";
+    line-height: 1.3;
+    page-break-after: avoid;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+}
+
+/* TARJETAS */
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    width: calc(220px - 10px);
+    /* El 25% asegura que haya 4 tarjetas por fila */
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    border: 1px solid #00a797;
+    cursor: pointer;
+}
+
+.card-title {
+    color: #383838;
+    font-weight: 700;
+    font-size: 13.5pt;
+    font-family: "PT Serif";
+    margin: 2px;
+}
+
+.card-description {
+    padding-top: 10pt;
+    padding-bottom: 0pt;
+    line-height: 1.3;
+    orphans: 2;
+    widows: 2;
+    text-align: left;
+    margin-right: -0.8pt;
+    margin: 0;
+    color: #2e2e2e;
+    font-size: 11pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* Número de líneas que deseas mostrar */
+    -webkit-box-orient: vertical;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+
+/* TARJETAS */
+
+@media (max-width: 768px) {
+
+    img {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .card-description {
+        margin-top: auto;
+        -webkit-line-clamp: 1000;
+        flex-grow: 1;
+    }
+
+    .card-container {
+        justify-content: center;
+    }
+
+    .background {
+        padding: 15px;
+    }
+
+    .ul-title {
+        font-size: 15pt;
+    }
+
+    p {
+        font-size: 13pt;
+    }
+
+    span {
+        font-size: 1pt;
+    }
+
+    .logo {
+        font-size: 20pt;
+    }
+
+    .black {
+        font-size: 30pt;
+    }
+
+    .blue {
+        font-size: 30pt;
+    }
+
+    .subtitle {
+        font-size: 13pt;
+    }
+}
+
+/* 
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        /* Cambia a una tarjeta por fila en pantallas aún más pequeñas 
+    }
+}
+ */
+/* @media only screen and (max-width: 768px) {
+    .ul-title {
+        font-size: 30pt;
+    }
+
+    p {
+        font-size: 20pt;
+        color: red;
+    }
+
+    span {
+        font-size: 30pt;
+    }
+
+    .logo {
+        font-size: 50pt;
+    }
+
+    .black {
+        font-size: 70pt;
+    }
+
+    .blue {
+        font-size: 70pt;
+    }
+
+    .subtitle {
+        font-size: 27pt;
+    }
+
+} */
